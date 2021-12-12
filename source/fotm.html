@@ -8,7 +8,6 @@
 
 <body class="page__body">
   <header class="page-header">
-
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -34,9 +33,8 @@
       <img src="img/logo.svg" alt="Седона">
     </a>
     <div class="page-header__intro">
-      <img src="img/sedona.svg" alt="sedona" class="intro-img">
+      <img src="img/sedona.svg" alt="sedona" class="page-header__intro-img">
     </div>
-
   </header>
 
   <main class="form-main">
@@ -90,20 +88,20 @@
           placeholder="Опишите подробно все свои восторги">
       </fieldset>
       <button class="form-button button" type="submit">Отправить отзыв</button>
-      <p class="form-text">* — обязательные поля</p>
+      <p class="form-button__text">* — обязательные поля</p>
     </form>
-
+z
     <section class="form-error visually-hidden">
       <h3 class="form-error-title">Что-то пошло не так!</h3>
       <p class="form-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button class="form-error-button button">Ок</button>
+      <button type="submit" class="form-error-button button">Ок</button>
     </section>
 
     <section class="form-sent visually-hidden">
       <h3 class="form-sent-title">Ваш отзыв отправлен!</h3>
       <p class="form-sent-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
         его на сайте</p>
-      <button class="form-sent-button button">Закрыть окно</button>
+      <button type="submit" class="form-sent-button button">Закрыть окно</button>
     </section>
 
   </main>

@@ -8,6 +8,7 @@
 
 <body class="page__body">
   <header class="page-header">
+
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -15,13 +16,13 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item title">
-            <a href="index.html" class="main-nav__link">Главная</a>
+            <a class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item title">
             <a href="media.html" class="main-nav__link">Фото и видео</a>
           </li>
           <li class="main-nav__item title">
-            <a class="main-nav__link">Форма отзыва</a>
+            <a href="fotm.html" class="main-nav__link">Форма отзыва</a>
           </li>
           <li class="main-nav__item title">
             <a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a>
@@ -33,7 +34,19 @@
       <img src="img/logo.svg" alt="Седона">
     </a>
     <div class="page-header__intro">
-      <img src="img/sedona.svg" alt="sedona" class="page-header__intro-img">
+      <ul class="inrto-list">
+        <li class="intro-item">
+          <img src="img/welcome.svg" alt="welcome" class="intro-img">
+        </li>
+        <li class="intro-item">
+          <img src="img/sedona.svg" alt="sedona" class="intro-img">
+        </li>
+        <li class="intro-item">
+          <img src="img/slogan.svg" alt="because hte grand canyon sucks!" class="intro-img">
+        </li>
+      </ul>
+      <div class="intro-decoration">
+      </div>
     </div>
   </header>
 
@@ -57,9 +70,9 @@
       <fieldset class="form-contacts">
         <legend class="contacts-legend">Контактная информация:</legend>
         <label for="contacts-phone" class="contacts-label">Контактный телефон*:</label>
-        <input type="number" id="contacts-phone" class="contacts-input" placeholder="Введите телефон">
+        <input type="number" id="contacts-phone" class="contacts-input" placeholder="Введите телефон" required>
         <label for="contacts-email" class="contacts-label">Электронная почта*:</label>
-        <input type="email" id="contacts-email" class="contacts-input" placeholder="Введите e-mail">
+        <input type="email" id="contacts-email" class="contacts-input" placeholder="Введите e-mail" required>
       </fieldset>
       <fieldset class="form-experience">
         <legend class="form-experience-legend">Ваше общее впечатление:</legend>
@@ -83,31 +96,28 @@
       </fieldset>
       <fieldset class="form-comments">
         <legend class="form-comments-legend">Опишите свои эмоции:</legend>
-        <label for="comments" class=""></label>
-        <input type="text" id="comments" name="comments" class="form-comments-comments"
-          placeholder="Опишите подробно все свои восторги">
+        <textarea name="comments" class="form-comments-comments"
+          placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
       <button class="form-button button" type="submit">Отправить отзыв</button>
-      <p class="form-button__text">* — обязательные поля</p>
+      <p class="form-button-text">* — обязательные поля</p>
     </form>
-z
+
     <section class="form-error visually-hidden">
-      <h3 class="form-error-title">Что-то пошло не так!</h3>
-      <p class="form-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-      <button type="submit" class="form-error-button button">Ок</button>
+      <h3 class="form-error__title">Что-то пошло не так!</h3>
+      <p class="form-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button type="submit" class="form-error__button button">Ок</button>
     </section>
 
     <section class="form-sent visually-hidden">
-      <h3 class="form-sent-title">Ваш отзыв отправлен!</h3>
-      <p class="form-sent-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
+      <h3 class="form-sent__title">Ваш отзыв отправлен!</h3>
+      <p class="form-sent__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем
         его на сайте</p>
-      <button type="submit" class="form-sent-button button">Закрыть окно</button>
+      <button type="submit" class="form-sent__button button">Закрыть окно</button>
     </section>
-
   </main>
 
   <footer class="page-footer">
-
     <p class="page-footer__hashtag title">#visitsedona</p>
     <ul class="socials-list">
       <li class="socials-list__item">
@@ -129,7 +139,6 @@ z
     </a>
 
   </footer>
-
 </body>
 
 </html>

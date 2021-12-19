@@ -1,0 +1,26 @@
+.advantages {
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+
+  &--wrapper {
+    background-color: $background-menu;
+    min-width: 320px;
+    min-height: 211px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__item {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  &__title {
+
+  }
+}

@@ -4,15 +4,16 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
+    <a href="index.html" class="page-header__logo visually-hidden">
+      <img src="img/logo.svg" alt="Седона">
+    </a>
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item title">
@@ -29,19 +30,19 @@
           </li>
         </ul>
       </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
 
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo.svg" alt="Седона">
-    </a>
     <div class="page-header__intro intro">
-          <img src="img/text-index.svg" alt="sedona" class="intro__img">
-    </div>
+      <img src="img/text-index.svg" alt="sedona" class="intro__img">
+</div>
   </header>
 
   <main class="page-main">
     <div class="main-intro main-intro--wrapper">
-      <h1 class="main-intro__title title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего</h1>
+      <h1 class="main-intro__title title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
       <p class="main-intro__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     <section class="advantages">
@@ -49,8 +50,10 @@
       <ol class="advantages__list">
 
         <li class="advantages__item">
-          <h3 class="advantages__title title">Настоящий городок</h3>
-          <p class="advantages__text text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="advantages--wrapper">
+            <h3 class="advantages__title title">Настоящий городок</h3>
+            <p class="advantages__text text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <img src="img/photo-city@1x.jpg" alt="фотография города" class="advantages__photo">
           <ul class="advantages__item extra-list">
             <li class="extra-list__item">
@@ -69,8 +72,10 @@
         </li>
 
         <li class="advantages__item">
-          <h3 class="advantages__title title">Там есть мост дьявола</h3>
-          <p class="advantages__text text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <div class="advantages--wrapper">
+            <h3 class="advantages__title title">Там есть мост дьявола</h3>
+            <p class="advantages__text text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
           <img src="img/photo-bridge@1x.jpg" alt="фотография моста" class="advantages__photo">
         </li>
 

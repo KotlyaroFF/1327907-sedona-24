@@ -1,0 +1,10 @@
+.page-header {
+  &__logo {
+    position: absolute;
+    height: 84px;
+    width: 102px;
+    left: 50%;
+    right: 50%;
+    margin-left: -42px;
+  }
+}

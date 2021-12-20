@@ -5,6 +5,8 @@
 @import "./global/font.scss";
 @import "./global/title.scss";
 @import "./global/text.scss";
+@import "./global/text-other-color.scss";
+@import "./global/button.scss";
 
 
 // components
@@ -14,4 +16,9 @@
 @import "./components/page-header/intro.scss";
 @import "./components/page-main/main-intro.scss";
 @import "./components/page-main/page-main.scss";
-@import "./components/page-main/advantages/advantages.scss"
+@import "./components/page-main/advantages/advantages.scss";
+@import "./components/page-main/extra-list/extra-list.scss";
+@import "./components/page-main/rent/rent.scss";
+@import "./components/page-footer/page-footer.scss";
+@import "./components/page-footer/socials-list.scss";
+@import "./components/page-footer/developer-link.scss";

@@ -1,11 +1,11 @@
 .main-nav {
-  display: flex;
-  justify-content: center;
-
   &__list {
     background-color: $background-menu;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   &__item {

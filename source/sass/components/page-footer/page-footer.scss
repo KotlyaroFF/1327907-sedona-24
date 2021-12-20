@@ -1,0 +1,10 @@
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  min-height: 120px;
+
+  &__hashtag {
+    font-size: 18px;
+  }
+}

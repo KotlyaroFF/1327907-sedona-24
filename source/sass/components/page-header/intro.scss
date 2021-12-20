@@ -1,9 +1,10 @@
 .intro {
   background: url("../../../img/back-mobile.jpg") no-repeat;
-  height: 389px;
+  min-height: 389px;
   display: flex;
+  justify-content: center;
 
   &__img {
-    justify-content: center;
+    min-width: 320px;
   }
 }

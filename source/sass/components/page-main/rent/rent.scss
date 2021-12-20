@@ -1,0 +1,16 @@
+.rent {
+  &--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__button {
+    width: 280px;
+  }
+}

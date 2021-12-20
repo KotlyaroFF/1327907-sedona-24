@@ -2,6 +2,8 @@
   &__list {
     margin: 0;
     padding: 0;
+    background-color: $backgtound-advantages;
+    list-style: inside;
   }
 
   &--wrapper {
@@ -11,6 +13,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    border: none;
   }
 
   &__item {
@@ -18,9 +21,12 @@
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    border-bottom: 1px $border-color solid;
+    margin: 0 20px;
+    min-height: 167px;
   }
 
-  &__title {
-
+  &__photo {
+    max-width: none;
   }
 }

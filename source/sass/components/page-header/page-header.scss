@@ -1,4 +1,9 @@
 .page-header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-width: 320px;
+
   &__logo {
     position: absolute;
     height: 84px;

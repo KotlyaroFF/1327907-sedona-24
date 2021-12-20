@@ -1,0 +1,30 @@
+.extra-list {
+  padding: 0;
+  margin: 0 -20px;
+  background-color: $text-white;
+
+  &__item {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 26px 20px 0 20px;
+    background: url("../../../../img//icon-gift.svg") no-repeat;
+  }
+
+  &__item:last-child {
+    background: url("../../../../img/icon-burger.svg") no-repeat;
+  }
+
+  &__item:first-child {
+    background: url("../../../../img/icon-house.svg") no-repeat;
+  }
+
+
+  &__title {
+    margin-left: 50px;
+  }
+
+  &__text {
+    margin-left: 50px;
+    text-align: left;
+  }
+}

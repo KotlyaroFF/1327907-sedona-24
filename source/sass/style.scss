@@ -7,18 +7,26 @@
 @import "./global/text.scss";
 @import "./global/text-other-color.scss";
 @import "./global/button.scss";
+@import "./global/text-bold.scss";
+@import "./global/form-hidden.scss";
 
 
 // components
 
-@import "./components/page-header/page-header.scss";
-@import "./components/page-header/main-nav.scss";
-@import "./components/page-header/intro.scss";
-@import "./components/page-main/main-intro.scss";
-@import "./components/page-main/page-main.scss";
-@import "./components/page-main/advantages/advantages.scss";
-@import "./components/page-main/extra-list/extra-list.scss";
-@import "./components/page-main/rent/rent.scss";
-@import "./components/page-footer/page-footer.scss";
-@import "./components/page-footer/socials-list.scss";
-@import "./components/page-footer/developer-link.scss";
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/intro.scss";
+@import "./components/main-intro.scss";
+@import "./components/advantages.scss";
+@import "./components/extra-list.scss";
+@import "./components/rent.scss";
+@import "./components/page-footer.scss";
+@import "./components/socials-list.scss";
+@import "./components/developer-link.scss";
+@import "./components/form.scss";
+@import "./components/form-error.scss";
+@import "./components/form-sent.scss";
+@import "./components/media-main.scss";
+@import "./components/catalog.scss";
+@import "./components/video.scss";
+@import "./components/video-player.scss"

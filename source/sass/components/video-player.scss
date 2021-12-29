@@ -1,0 +1,44 @@
+.video-player {
+  background: url("../../img/video-mobile.jpg") no-repeat;
+}
+
+.video-player__video {
+  min-height: 201px;
+  min-width: 320px;
+}
+
+.video-player-control__list {
+  list-style: none;
+  margin: 0 20px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  background-color: $input-gray;
+}
+
+.video-player-control__botton {
+  border: none;
+  margin-top: 22px;
+
+  &--replay {
+    background: url("../../img/replay.svg") no-repeat;
+    width: 23px;
+    height: 21px;
+    margin-left: 25px;
+    margin-right: 133px;
+  }
+
+  &--subtitles {
+    background: url("../../img/subtitles.svg") no-repeat;
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    background: url("../../img/fullscreen.svg") no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-right: 23px;
+  }
+}

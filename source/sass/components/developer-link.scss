@@ -3,13 +3,13 @@
   justify-content: center;
   align-content: stretch;
   text-decoration: none;
-  color: $text-black;
+  color: $black;
+}
 
-  &__icon {
-    margin-left: 10px;
-  }
+.developer-link__icon {
+  margin-left: 10px;
+}
 
-  &__text {
-    text-align: center;
-  }
+.developer-link__text {
+  text-align: center;
 }

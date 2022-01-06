@@ -26,10 +26,11 @@
   line-height: 24px;
   margin-top: 0;
   margin-bottom: 0;
+  color: $light-black;
 }
 
 .catalog__button-like {
-  background: url("../../img//like-icon.svg") no-repeat;
+  background: url("/source/img/like-icon.svg") no-repeat;
   width: 23px;
   height: 21px;
   border: none;

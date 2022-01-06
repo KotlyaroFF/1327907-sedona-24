@@ -2,7 +2,13 @@
   min-width: 320px;
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px $light-gtay solid;
+  border-top: 1px $light-gray solid;
+
+  &--wrapper {
+    display: flex;
+    justify-content: left;
+    width: 280px;
+  }
 }
 
 .form__fieldset {
@@ -13,12 +19,6 @@
   flex-wrap: wrap;
   padding: 0;
   min-width: 280px;
-}
-
-.form-wrapper {
-  display: flex;
-  justify-content: left;
-  width: 280px;
 }
 
 .form__legend {
@@ -32,6 +32,7 @@
   &--type-text {
     padding-top: 40px;
     padding-right: 13px;
+    color: $light-black;
   }
 
   &--wrapper {
@@ -39,6 +40,7 @@
     margin-top: 17px;
     margin-left: 22px;
     margin-bottom: -13px;
+    color: $light-black;
   }
 }
 

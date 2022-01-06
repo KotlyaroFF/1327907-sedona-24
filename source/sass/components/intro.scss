@@ -1,10 +1,17 @@
 .intro {
-  min-height: 389px;
   display: flex;
   justify-content: center;
-  background: url("../../img/back-mobile.jpg") no-repeat;
+  background: url("../img/back-mobile.jpg") no-repeat;
+  min-width: 320px;
+  max-width: 100%;
+  min-height: auto;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-desktop.jpg") no-repeat;
+  }
 }
 
 .intro__img {
-  min-width: 320px;
+
+  margin: 77px 0 91px 0;
 }

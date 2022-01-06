@@ -1,0 +1,15 @@
+.developer-link {
+  display: flex;
+  justify-content: center;
+  align-content: stretch;
+  text-decoration: none;
+  color: $black;
+}
+
+.developer-link__icon {
+  margin-left: 10px;
+}
+
+.developer-link__text {
+  text-align: center;
+}

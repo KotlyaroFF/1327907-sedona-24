@@ -1,0 +1,21 @@
+.socials-list {
+  display: flex;
+  list-style: none;
+  padding: 0 50px;
+}
+
+.socials-list__item {
+  margin-right: 6px;
+}
+
+.socials-list__link {
+  display: block;
+  width: 47px;
+  height: 48px;
+  background-color: $background-blue;
+}
+
+.socials-list__item:last-child {
+  margin-right: 0;
+}
+

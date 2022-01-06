@@ -1,1 +1,33 @@
-// Начните писать стили здесь
+// global
+
+@import "./global/global.scss";
+@import "./global/variables.scss";
+@import "./global/font.scss";
+@import "./global/title.scss";
+@import "./global/text.scss";
+@import "./global/text-other-color.scss";
+@import "./global/button.scss";
+@import "./global/text-bold.scss";
+@import "./global/form-hidden.scss";
+
+
+// components
+
+@import "./components/page-header.scss";
+@import "./components/main-nav.scss";
+@import "./components/intro.scss";
+@import "./components/main-intro.scss";
+@import "./components/advantages.scss";
+@import "./components/extra-list.scss";
+@import "./components/rent.scss";
+@import "./components/page-footer.scss";
+@import "./components/socials-list.scss";
+@import "./components/developer-link.scss";
+@import "./components/form.scss";
+@import "./components/form-error.scss";
+@import "./components/form-sent.scss";
+@import "./components/media-main.scss";
+@import "./components/catalog.scss";
+@import "./components/video.scss";
+@import "./components/video-player.scss";
+@import "./components/video-player-control.scss";

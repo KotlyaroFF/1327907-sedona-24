@@ -4,44 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
 
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item title">
+          <li class="main-nav__item title text-other-color">
             <a class="main-nav__link">Главная</a>
           </li>
-          <li class="main-nav__item title">
+          <li class="main-nav__item title text-other-color">
             <a href="media.html" class="main-nav__link">Фото и видео</a>
           </li>
-          <li class="main-nav__item title">
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__logo main-nav__link visually-hidden">
+              <img src="img/logo.svg" alt="Седона">
+            </a>
+          </li>
+          <li class="main-nav__item title text-other-color">
             <a href="form.html" class="main-nav__link">Форма отзыва</a>
           </li>
-          <li class="main-nav__item title">
+          <li class="main-nav__item title text-other-color">
             <a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a>
           </li>
         </ul>
-      </div>
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
 
-    <a href="index.html" class="page-header__logo">
-      <img src="img/logo.svg" alt="Седона">
-    </a>
     <div class="page-header__intro intro">
-          <img src="img/text-index.svg" alt="sedona" class="intro__img">
-    </div>
+      <img src="img/text-index.svg" alt="sedona" class="intro__img">
+</div>
   </header>
 
   <main class="page-main">
     <div class="main-intro main-intro--wrapper">
-      <h1 class="main-intro__title title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего</h1>
+      <h1 class="main-intro__title title">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</h1>
       <p class="main-intro__text text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     <section class="advantages">
@@ -49,8 +51,10 @@
       <ol class="advantages__list">
 
         <li class="advantages__item">
-          <h3 class="advantages__title title">Настоящий городок</h3>
-          <p class="advantages__text text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <div class="advantages--wrapper">
+            <h3 class="advantages__title title text-other-color">Настоящий городок</h3>
+            <p class="advantages__text text text-other-color">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </div>
           <img src="img/photo-city@1x.jpg" alt="фотография города" class="advantages__photo">
           <ul class="advantages__item extra-list">
             <li class="extra-list__item">
@@ -63,14 +67,16 @@
             </li>
             <li class="extra-list__item">
               <h3 class="extra-list__title title">Сувениры</h3>
-              <p class="extra-list__text text">Не только китайского, но и настоящего местного производства!</p>
+              <p class="extra-list__text text">Не только китайского, но и местного производства!</p>
             </li>
           </ul>
         </li>
 
         <li class="advantages__item">
-          <h3 class="advantages__title title">Там есть мост дьявола</h3>
-          <p class="advantages__text text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          <div class="advantages--wrapper">
+            <h3 class="advantages__title title text-other-color">Там есть мост дьявола</h3>
+            <p class="advantages__text text text-other-color">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+          </div>
           <img src="img/photo-bridge@1x.jpg" alt="фотография моста" class="advantages__photo">
         </li>
 
@@ -92,9 +98,9 @@
     </section>
 
     <section class="rent">
-      <h2 class="visually hidden">Арендовать гостинницу</h2>
+      <h2 class="visually-hidden">Арендовать гостинницу</h2>
       <div class="rent__wrapper">
-        <p class="rent__title">Заинтересовались?</p>
+        <p class="rent__title title">Заинтересовались?</p>
         <p class="rent__text text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
         <a href="catalog.html" class="rent__button button">Найти гостиницу</a>
@@ -107,22 +113,22 @@
 
   <footer class="page-footer">
     <p class="page-footer__hashtag title">#visitsedona</p>
-    <ul class="socials-list">
+    <ul class="page-footer__list socials-list">
       <li class="socials-list__item">
-        <a href="https://twitter.com/htmlacademy_ru" class="socials-list__link">Седона в twitter
+        <a href="https://twitter.com/htmlacademy_ru" class="socials-list__link"><span class="visually-hidden">Седона в twitter</span>
         </a>
       </li>
       <li class="socials-list__item">
-        <a href="https://www.facebook.com/htmlacademy" class="socials-list__link">Седона в facebook
+        <a href="https://www.facebook.com/htmlacademy" class="socials-list__link"><span class="visually-hidden">Седона в facebook</span>
         </a>
       </li>
       <li class="socials-list__item">
-        <a href="https://www.youtube.com/user/htmlacademyru" class="socials-list__link">Седона в youtube
+        <a href="https://www.youtube.com/user/htmlacademyru" class="socials-list__link"><span class="visually-hidden">Седона в youtube</span>
         </a>
       </li>
     </ul>
     <a href="https://htmlacademy.ru" class="developer-link">
-      <p class="developer-link__text">Разработано</p>
+      <p class="developer-link__text text">Разработано</p>
       <img src="img/icon-htmlacademy.svg" alt="htmlacademy" class="developer-link__icon">
     </a>
   </footer>

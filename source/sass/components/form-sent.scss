@@ -1,0 +1,30 @@
+.form-sent {
+  padding-top: 38px;
+  max-width: 640px;
+}
+
+.form-sent__title {
+  margin: 0;
+}
+
+.form-sent__text {
+  margin: 33px 30px;
+  text-align: center;
+}
+
+.form-sent__button {
+  min-width: 280px;
+  max-width: 458px;
+  font-size: 18px;
+  margin: 20px;
+
+
+  &--wrapper {
+    background-color: $input-gray;
+    width: 100%;
+    min-height: 98px;
+    max-height: 146px;
+    display: flex;
+    justify-content: center;
+  }
+}

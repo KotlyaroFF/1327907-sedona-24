@@ -1,0 +1,15 @@
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.video__title {
+  margin-top: 32px;
+  margin-bottom: 30px;
+}
+
+.video__text {
+  margin-bottom: 33px;
+  text-align: center;
+}

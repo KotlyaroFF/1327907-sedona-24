@@ -1,0 +1,18 @@
+.main-intro {
+  min-width: 280px;
+  min-height: 162px;
+  margin: 32px 18px 11px 17px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-intro__title {
+  margin: 0;
+}
+
+.main-intro__text {
+  margin-top: 0;
+  margin-bottom: 0;
+}

@@ -1,0 +1,20 @@
+.extra-list {
+  padding: 0;
+  margin: 0 -20px;
+  background-color: $white;
+}
+
+.extra-list__item {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 26px 20px 0 20px;
+}
+
+.extra-list__title {
+  margin-left: 50px;
+}
+
+.extra-list__text {
+  margin-left: 50px;
+  text-align: left;
+}

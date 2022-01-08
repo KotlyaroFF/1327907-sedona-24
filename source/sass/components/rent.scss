@@ -1,8 +1,12 @@
 .rent__wrapper {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin: 30px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 458px;
+  }
 }
 
 .rent__text {
@@ -10,6 +14,10 @@
 }
 
 .rent__button {
-  width: 280px;
+  min-width: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-width: 458px;
+  }
 }
 

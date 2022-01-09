@@ -1,6 +1,7 @@
 .media-main {
-  min-width: 320px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  min-width: 320px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
 }

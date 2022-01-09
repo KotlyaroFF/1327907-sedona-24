@@ -13,7 +13,7 @@
   margin-top: 22px;
 
   &--replay {
-    background: url("/source/img/replay.svg") no-repeat;
+    background: url("../img/replay.svg") no-repeat;
     width: 23px;
     height: 21px;
     margin-left: 25px;
@@ -21,13 +21,13 @@
   }
 
   &--subtitles {
-    background: url("/source/img/subtitles.svg") no-repeat;
+    background: url("../img/subtitles.svg") no-repeat;
     width: 32px;
     height: 20px;
   }
 
   &--fullscreen {
-    background: url("/source/img/fullscreen.svg") no-repeat;
+    background: url("../img/fullscreen.svg") no-repeat;
     width: 20px;
     height: 20px;
     margin-right: 23px;

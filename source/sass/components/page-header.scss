@@ -2,8 +2,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  min-width: 320px;
-  max-width: 1200px;
+  min-width: $mobile-width-only;
+  max-width: $desktop-width;
   flex-direction: column;
 
   @media (min-width: $desktop-width) {

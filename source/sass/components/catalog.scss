@@ -30,7 +30,7 @@
     padding: 0;
     background-color: $input-gray;
 
-    &:first-child {
+    &--preview {
       grid-column-start: 1;
       grid-column-end: -1;
     }
@@ -67,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     &--preview {
-      width: 1200px;
+      width: $desktop-width;
       height: 400px;
     }
   }

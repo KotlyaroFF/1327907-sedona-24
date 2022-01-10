@@ -1,9 +1,9 @@
 .form-main {
   display: flex;
-  min-width: 320px;
+  min-width: $mobile-width-only;
   flex-direction: column;
   align-items: center;
-  max-width: 1200px;
+  max-width: $desktop-width;
 
   @media (min-width: $desktop-width) {
     background-color: $white;

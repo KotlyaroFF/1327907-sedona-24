@@ -20,12 +20,12 @@
   border-bottom: 1px $gray solid;
   min-height: 167px;
 
-  &:first-child {
+  &--long-1 {
     grid-column-start: 1;
     grid-column-end: 4;
   }
 
-  &:nth-child(2) {
+  &--long-2 {
     grid-column-start: 1;
     grid-column-end: 4;
   }
@@ -46,7 +46,7 @@
 
 .advantages__content-wrapper {
   background-color: $background-blue;
-  min-width: 320px;
+  min-width: $mobile-width-only;
   display: flex;
   border: none;
   flex-direction: column;
@@ -57,7 +57,6 @@
 }
 
 .advantages__photo {
-  min-width: none;
   max-width: 100%;
 }
 

@@ -4,4 +4,8 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @media (min-width: $desktop-width) {
+    background-color: $input-gray;
+  }
 }

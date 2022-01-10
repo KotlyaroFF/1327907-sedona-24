@@ -81,4 +81,8 @@
   position: absolute;
   right: 10px;
   top: 17px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

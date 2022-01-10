@@ -13,7 +13,7 @@
 
 .video-player__video {
   min-height: 201px;
-  min-width: $mobile-width-only;
+  min-width: $mobile-width;
 
   @media (min-width: $tablet-width) {
     min-width: 648px;

@@ -1,11 +1,10 @@
 .main-intro {
   min-width: 280px;
-  min-height: 162px;
+  max-width: 483px;
   margin: 32px 18px 11px 17px;
   text-align: center;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
 }
 
 .main-intro__title {
@@ -13,6 +12,6 @@
 }
 
 .main-intro__text {
-  margin-top: 0;
+  margin-top: 25px;
   margin-bottom: 0;
 }

@@ -4,6 +4,10 @@
   align-content: stretch;
   text-decoration: none;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+  }
 }
 
 .developer-link__icon {

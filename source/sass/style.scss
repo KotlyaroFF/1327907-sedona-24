@@ -13,9 +13,11 @@
 
 // components
 
+@import "./components/page.scss";
 @import "./components/page-header.scss";
 @import "./components/main-nav.scss";
 @import "./components/intro.scss";
+@import "./components/page-main.scss";
 @import "./components/main-intro.scss";
 @import "./components/advantages.scss";
 @import "./components/extra-list.scss";
@@ -23,6 +25,7 @@
 @import "./components/page-footer.scss";
 @import "./components/socials-list.scss";
 @import "./components/developer-link.scss";
+@import "./components/form-main.scss";
 @import "./components/form.scss";
 @import "./components/form-error.scss";
 @import "./components/form-sent.scss";

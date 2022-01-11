@@ -1,6 +1,11 @@
 .form-main {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  min-width: 320px;
+  min-width: $mobile-width;
+  flex-direction: column;
+  align-items: center;
+  max-width: $desktop-width;
+
+  @media (min-width: $desktop-width) {
+    background-color: $white;
+  }
 }

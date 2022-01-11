@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   background: url("../img/back-mobile.jpg") no-repeat;
-  min-width: 320px;
+  min-width: $mobile-width;
   background-position: center;
 
 

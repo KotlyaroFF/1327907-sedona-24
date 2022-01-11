@@ -2,20 +2,21 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 320px;
-  max-width: 1200px;
-  margin-bottom: 36px;
+  min-width: $mobile-width;
+  max-width: $desktop-width;
+  min-height: 120px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
-    min-width: 768px;
+    min-width: $tablet-width;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 1200px;
+    min-width: $desktop-width;
+    background-color: $white;
   }
 }
 
@@ -24,6 +25,6 @@
   margin-top: 28px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 48px;
+    margin: auto 0;
   }
 }

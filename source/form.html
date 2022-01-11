@@ -4,24 +4,25 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">я
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo visually-hidden">
-      <img src="img/logo.svg" alt="Седона">
-    </a>
 
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item title text-other-color">
             <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item title text-other-color">
             <a href="media.html" class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a href="index.html" class="main-nav__logo main-nav__link visually-hidden">
+              <img src="img/logo.svg" alt="Седона">
+            </a>
           </li>
           <li class="main-nav__item title text-other-color">
             <a class="main-nav__link">Форма отзыва</a>
@@ -30,7 +31,6 @@
             <a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a>
           </li>
         </ul>
-      </div>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -41,7 +41,6 @@
 </div>
   </header>
 
-
   <main class="form-main">
     <div class="main-intro main-intro--wrapper">
       <h1 class="main-intro__title title">Оставьте свой отзыв</h1>
@@ -50,32 +49,32 @@
     </div>
 
     <form class="form-main__form form" action="https://echo.htmlacademy.ru/" method="get">
-      <fieldset class="form__fieldset">
-        <legend class="form__legend title">Представьтесь:</legend>
-        <div class="form--wrapper">
+      <fieldset class="form__fieldset form__fieldset--user-name">
+        <legend class="form__legend form__legend--left title">Представьтесь:</legend>
+        <div class="form__fieldset--wrapper">
           <label for="user-name" class="form__label form__label--type-text text">Имя:</label>
           <input type="text" id="user-name" name="user-name" class="form__input text-bold form__input--type-text" placeholder="Петр">
         </div>
-        <div class="form--wrapper">
+        <div class="form__fieldset--wrapper">
           <label for="user-surname" class="form__label form__label--type-text text">Фамилия:</label>
           <input type="text" id="user-surname" name="user-surname" class="form__input text-bold form__input--type-text" placeholder="Иванов">
         </div>
-        <div class="form--wrapper">
+        <div class="form__fieldset--wrapper">
           <label for="user-patronymic" class="form__label form__label--type-text text">Отчество:</label>
           <input type="text" id="user-patronymic" name="user-patronymic" class="form__input text-bold form__input--type-text" placeholder="Александрович">
       </div>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--user-contacts">
         <legend class="form__legend title">Контактная информация:</legend>
         <label for="contacts-phone" class="form__label form__label--wrapper text">Контактный телефон*:</label>
-        <input type="tel" id="contacts-phone" class="form__input text-bold form__input--type-text" placeholder="Введите телефон" required>
+        <input type="tel" id="contacts-phone" class="form__input text-bold form__input--type-text form__input--wrapper" placeholder="Введите телефон" required>
         <label for="contacts-email" class="form__label form__label--wrapper text">Электронная почта*:</label>
-        <input type="email" id="contacts-email" class="form__input text-bold form__input--type-text" placeholder="Введите e-mail" required>
+        <input type="email" id="contacts-email" class="form__input text-bold form__input--type-text form__input--wrapper" placeholder="Введите e-mail" required>
       </fieldset>
 
-      <fieldset class="form__fieldset">
-        <legend class="form__legend title">Ваше общее впечатление:</legend>
+      <fieldset class="form__fieldset form__fieldset--user-experience">
+        <legend class="form__legend form__legend--center title">Ваше общее впечатление:</legend>
         <div class="form-wrapper">
           <input type="radio" id="positive" value="positive" name="experience" class="form__input" checked>
           <label for="positive" class="form__label text-bold">Скорее положительное</label>
@@ -90,27 +89,27 @@
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--user-place">
         <legend class="form__legend title">Посещенные достопримечательности:</legend>
         <div class="form-wrapper">
-          <input type="checkbox" id="bridge" name="place" value="bridge" class="form__input" checked>
+          <input type="checkbox" id="bridge" name="place" value="bridge" class="form__input form__input--type-checkbox" checked>
           <label for="bridge" class="form__label text-bold">Мост Дьявола</label>
         </div>
         <div class="form-wrapper">
-          <input type="checkbox" id="mountain" name="place" value="mountain" class="form__input" checked>
+          <input type="checkbox" id="mountain" name="place" value="mountain" class="form__input form__input--type-checkbox" checked>
           <label for="mountain" class="form__label text-bold">Гора-Колокол</label>
         </div>
         <div class="form-wrapper">
-          <input type="checkbox" id="park" name="place" value="park" class="form__input" checked>
+          <input type="checkbox" id="park" name="place" value="park" class="form__input form__input--type-checkbox" checked>
           <label for="park" class="form__label text-bold">Слайд-парк</label>
         </div>
         <div class="form-wrapper">
-          <input type="checkbox" id="rock" name="place" value="rock" class="form__input">
+          <input type="checkbox" id="rock" name="place" value="rock" class="form__input form__input--type-checkbox">
           <label for="rock" class="form__label text-bold">Красные скалы</label>
         </div>
       </fieldset>
 
-      <fieldset class="form__fieldset">
+      <fieldset class="form__fieldset form__fieldset--user-comments">
         <legend class="form__legend title">Опишите свои эмоции:</legend>
         <textarea name="comments" class="form__comments text-bold" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>

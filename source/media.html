@@ -10,18 +10,19 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo visually-hidden">
-      <img src="img/logo.svg" alt="Седона">
-    </a>
 
     <nav class="main-nav">
-      <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item title text-other-color">
             <a href="index.html" class="main-nav__link">Главная</a>
           </li>
           <li class="main-nav__item title text-other-color">
             <a class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="index.html" class="main-nav__logo main-nav__link visually-hidden">
+              <img src="img/logo.svg" alt="Седона">
+            </a>
           </li>
           <li class="main-nav__item title text-other-color">
             <a href="form.html" class="main-nav__link">Форма отзыва</a>
@@ -30,7 +31,6 @@
             <a href="https://htmlacademy.ru" class="main-nav__link">HTML academy</a>
           </li>
         </ul>
-      </div>
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -51,60 +51,78 @@
     <section class="media-main__catalog catalog">
       <h2 class="visually-hidden">Фотографии</h2>
       <ul class="catalog__list">
-        <li class="catalog__item">
-          <img src="img/photo-catalog/photo-1-mobile.jpg" alt="Неродные просторы" class="catalog__img">
-          <h3 class="catalog__title title">Неродные просторы</h3>
-          <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Борис</span></p>
-          <div class="catalog__button-like--wrapper">
-            <button type="button" class="catalog__button-like">
-              <span class="visually-hidden">Мне нравится</span>
-            </button>
-            <span class="catalog__button-like-quantity">1350</span>
+        <li class="catalog__item catalog__item--preview">
+          <img src="img/photo-catalog/photo-1-mobile.jpg" alt="Неродные просторы" class="catalog__img catalog__img--preview">
+          <div class="catalog__item--wrapper">
+            <div class="catalog__item--sudtext">
+              <h3 class="catalog__title title">Неродные просторы</h3>
+              <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Борис</span></p>
+            </div>
+            <div class="catalog__button-like--wrapper">
+              <button type="button" class="catalog__button-like">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="catalog__button-like-quantity">1350</span>
+            </div>
           </div>
         </li>
 
         <li class="catalog__item">
           <img src="img/photo-catalog/photo-2-mobile.jpg" alt="Местная растительность" class="catalog__img">
-          <h3 class="catalog__title title">Местная растительность</h3>
-          <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Сергей</span></p>
-          <div class="catalog__button-like--wrapper">
-            <button type="button" class="catalog__button-like">
-              <span class="visually-hidden">Мне нравится</span>
-            </button>
-            <span class="catalog__button-like-quantity">143</span>
+          <div class="catalog__item--wrapper">
+            <div class="catalog__item--sudtext">
+              <h3 class="catalog__title title">Местная растительность</h3>
+              <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Сергей</span></p>
+            </div>
+            <div class="catalog__button-like--wrapper">
+              <button type="button" class="catalog__button-like">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="catalog__button-like-quantity">143</span>
+            </div>
           </div>
         </li>
 
         <li class="catalog__item">
           <img src="img/photo-catalog/photo-3-mobile.jpg" alt="Дорога на север" class="catalog__img">
-          <h3 class="catalog__title title">Дорога на север</h3>
-          <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Петр</span></p>
-          <div class="catalog__button-like--wrapper">
-            <button type="button" class="catalog__button-like">
-              <span class="visually-hidden">Мне нравится</span>
-            </button>
-            <span class="catalog__button-like-quantity">96</span>
+          <div class="catalog__item--wrapper">
+            <div class="catalog__item--sudtext">
+              <h3 class="catalog__title title">Дорога на север</h3>
+              <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Петр</span></p>
+            </div>
+            <div class="catalog__button-like--wrapper">
+              <button type="button" class="catalog__button-like">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="catalog__button-like-quantity">96</span>
+            </div>
           </div>
         </li>
 
         <li class="catalog__item">
           <img src="img/photo-catalog/photo-4-mobile.jpg" alt="Мост дьявола" class="catalog__img">
-          <h3 class="catalog__title title">Мост дьявола</h3>
-          <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Антон</span></p>
-          <div class="catalog__button-like--wrapper">
-            <button type="button" class="catalog__button-like">
-              <span class="visually-hidden">Мне нравится</span>
-            </button>
-            <span class="catalog__button-like-quantity">254</span>
+          <div class="catalog__item--wrapper">
+            <div class="catalog__item--sudtext">
+              <h3 class="catalog__title title">Мост дьявола</h3>
+              <p class="catalog__text">Автор фото:<span class="catalog__autor-name">Антон</span></p>
+            </div>
+            <div class="catalog__button-like--wrapper">
+              <button type="button" class="catalog__button-like">
+                <span class="visually-hidden">Мне нравится</span>
+              </button>
+              <span class="catalog__button-like-quantity">254</span>
+            </div>
           </div>
         </li>
       </ul>
     </section>
 
     <section class="media-main__video video">
-      <h2 class="video__title main-intro__title title">Все еще сомневаетесь?</h2>
-      <p class="video__text main-intro__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+      <div class="video--wrapper">
+        <h2 class="video__title main-intro__title title">Все еще сомневаетесь?</h2>
+        <p class="video__text main-intro__text text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
         очередной раз!</p>
+      </div>
       <div class="video__video-player video-player">
         <div class="video-player__video"></div>
         <div class="video-player-control">

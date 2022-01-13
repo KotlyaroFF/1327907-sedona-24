@@ -9,16 +9,14 @@
   @media (min-width: $tablet-width) {
     margin-left: 60px;
     margin-right: 60px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 480px 347px 347px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 648px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 400px 400px 400px;
-    grid-template-rows: 400px 267px 267px;
-    margin-left: 120px;
-    margin-right: 120px;
+    max-width: $desktop-width;
+    margin: 0;
   }
 }
 
@@ -49,6 +47,14 @@
   &--sudtext {
     display: flex;
     flex-direction: column;
+
+    @media (min-width: $tablet-width) {
+      max-width: 239px;
+    }
+
+    @media (min-width: $desktop-width) {
+      max-width: 315px;
+    }
   }
 }
 
@@ -57,18 +63,19 @@
   max-height: 400px;
 
   @media (min-width: $tablet-width) {
-    height: 267px;
+    width: 324px;
 
     &--preview {
-      width: 648px;
-      height: 400px;
+      min-width: 648px;
+      width: auto;
     }
   }
 
   @media (min-width: $desktop-width) {
+    width: 400px;
+
     &--preview {
-      width: $desktop-width;
-      height: 400px;
+      min-width: $desktop-width;
     }
   }
 }
@@ -107,7 +114,7 @@
 
 
     @media (min-width: $tablet-width) {
-      width: 85px;
+      max-width: 85px;
       margin: auto 0;
     }
   }

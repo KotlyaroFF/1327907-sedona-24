@@ -12,4 +12,13 @@
   border: none;
   font-family: inherit;
   font-weight: 700;
+
+  &:hover {
+    background-color: $dark-blue;
+  }
+
+  &:active {
+    background-color: $dark-blue;
+    color: $text-menu-active;
+  }
 }

@@ -13,4 +13,12 @@
 .main-intro__text {
   margin-top: 25px;
   margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 41px;
+  }
 }

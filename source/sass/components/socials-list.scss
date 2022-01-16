@@ -3,17 +3,39 @@
   list-style: none;
   margin: auto 0;
   padding: 0;
+
+  @media (max-width: $mobile-width-only) {
+    margin-top: 12px;
+    margin-bottom: 25px;
+  }
 }
 
 .socials-list__item {
   margin-right: 6px;
+  width: 47px;
+  height: 48px;
+  background-color: $blue;
 }
 
 .socials-list__link {
   display: block;
   width: 47px;
   height: 48px;
-  background-color: $blue;
+
+  &--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat;
+    background-position: center;
+  }
+
+  &--facebook {
+    background: url("../img/icon-facebook.svg") no-repeat;
+    background-position: center;
+  }
+
+  &--youtube {
+    background: url("../img/icon-youtube.svg") no-repeat;
+    background-position: center;
+  }
 
   &:hover {
     background-color: $dark-blue;

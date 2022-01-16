@@ -11,9 +11,28 @@
 }
 
 .developer-link__icon {
+  margin: auto;
   margin-left: 10px;
+
+
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer-link__text {
   text-align: center;
+
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    color: $black;
+    opacity: 0.3;
+  }
 }

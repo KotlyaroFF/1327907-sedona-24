@@ -5,12 +5,22 @@
   margin: 20px;
 
   @media (min-width: $tablet-width) {
-    max-width: 458px;
+    margin-top: 30px;
+    margin-bottom: 66px;
   }
 }
 
 .rent__text {
   text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 580px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 42px;
+    margin-top: 21px;
+  }
 }
 
 .rent__button {

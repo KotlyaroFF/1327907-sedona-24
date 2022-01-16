@@ -1,0 +1,31 @@
+.text-space--mobile-only {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.text-space--no-mobile {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.text-space--tablet {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.text-space--desktop {
+  @media (max-width: $desktop-width-only) {
+    display: none;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}

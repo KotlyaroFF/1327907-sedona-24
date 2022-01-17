@@ -2,12 +2,12 @@
   background: url("../img/video-mobile.jpg") no-repeat;
 
   @media (min-width: $tablet-width) {
-    background: url("../../img/video-desktop 1.jpg") no-repeat;
+    background: url("../img/video-desktop 1.jpg") no-repeat;
   }
 
 
   @media (min-width: $desktop-width) {
-    background: url("../../img/video-desktop.jpg") no-repeat;
+    background: url("../img/video-desktop.jpg") no-repeat;
   }
 }
 

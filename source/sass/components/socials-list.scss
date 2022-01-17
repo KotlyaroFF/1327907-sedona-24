@@ -22,21 +22,6 @@
   width: 47px;
   height: 48px;
 
-  &--twitter {
-    background: url("../img/icon-twitter.svg") no-repeat;
-    background-position: center;
-  }
-
-  &--facebook {
-    background: url("../img/icon-facebook.svg") no-repeat;
-    background-position: center;
-  }
-
-  &--youtube {
-    background: url("../img/icon-youtube.svg") no-repeat;
-    background-position: center;
-  }
-
   &:hover {
     background-color: $dark-blue;
   }
@@ -44,6 +29,27 @@
   &:active {
     background-color: $dark-blue;
     color: $text-menu-active;
+  }
+}
+
+.socials-list__icon {
+  display: block;
+  margin: auto;
+
+  &:active path {
+    fill: $text-menu-active;
+  }
+
+  &--twitter {
+    padding-top: 16px;
+  }
+
+  &--facebook {
+    padding-top: 13px;
+  }
+
+  &--youtube {
+    padding-top: 17px;
   }
 }
 

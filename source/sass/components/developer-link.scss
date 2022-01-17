@@ -15,11 +15,11 @@
   margin-left: 10px;
 
 
-  &:hover {
+  &:hover path {
     fill: $blue;
   }
 
-  &:active {
+  &:active path {
     opacity: 0.3;
   }
 }

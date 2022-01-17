@@ -1,9 +1,14 @@
 .main-intro {
   min-width: 280px;
-  margin: 32px 18px 11px 17px;
+  margin: 32px 18px 33px 17px;
   text-align: center;
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-bottom: 77px;
+  }
 }
 
 .main-intro__title {
@@ -13,12 +18,4 @@
 .main-intro__text {
   margin-top: 25px;
   margin-bottom: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 41px;
-  }
 }

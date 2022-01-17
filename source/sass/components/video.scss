@@ -13,9 +13,27 @@
 
 .video__title {
   margin-top: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+  }
 }
 
 .video__text {
   margin-bottom: 33px;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 88px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+  }
 }

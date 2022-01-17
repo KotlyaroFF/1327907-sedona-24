@@ -1,13 +1,48 @@
 .main-intro {
   min-width: 280px;
-  margin: 32px 18px 33px 17px;
+  margin: 32px 18px 48px 17px;
   text-align: center;
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    margin-top: 65px;
+    margin-top: 43px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 55px;
+    margin-bottom: 41px;
+  }
+}
+
+.main-intro--media {
+  margin-top: 31px;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
     margin-bottom: 77px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 102px;
+    margin-bottom: 67px;
+  }
+}
+
+.main-intro--form {
+  margin-top: 36px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 114px;
+    margin-bottom: 56px;
   }
 }
 

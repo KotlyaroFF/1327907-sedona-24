@@ -4,6 +4,7 @@
   background: url("../img/back-mobile.jpg") no-repeat;
   min-width: $mobile-width;
   background-position: center;
+  background-color: $blue;
 
 
   @media (min-width: $tablet-width) {

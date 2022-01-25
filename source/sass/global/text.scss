@@ -3,10 +3,4 @@
   line-height: 21px;
   font-size: 14px;
   color: $light-black;
-
-  &--tablet {
-    @media (min-width: $tablet-width) {
-      font-size: 21px;
-    }
-  }
 }

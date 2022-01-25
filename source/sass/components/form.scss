@@ -76,6 +76,7 @@
       grid-row-end: 2;
       border-right: 1px $light-gray solid;
       margin-bottom: 56px;
+      justify-content: stretch;
     }
 
     &--user-place {
@@ -103,13 +104,13 @@
 
     &--user-place {
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
       margin-bottom: 0;
     }
 
     &--user-contacts {
       flex-direction: row;
-      flex-wrap: nowrap;
+      flex-wrap: wrap;
     }
   }
 }
@@ -294,6 +295,7 @@
     margin: auto;
     padding-right: 13px;
     color: $light-black;
+    padding-left: 20px;
   }
 
   &--wrapper {
@@ -387,6 +389,17 @@
     border: 5px $input-gray-disabled solid;
   }
 
+  &:focus + .form__label--radio .form__input-radio {
+    background-color: $input-gray-disabled;
+    border: 5px $input-gray-disabled solid;
+  }
+
+
+  &:focus:checked + .form__label--radio .form__input-radio {
+    background-color: $input-gray-disabled;
+    border: 5px $input-gray-disabled solid;
+  }
+
   &:checked + .form__label--radio .form__input-radio {
     background-position: center;
     border: 5px $input-gray solid;
@@ -428,6 +441,17 @@
   }
 
   &:active + .form__label--checkbox .form__input-checkbox {
+    background-color: $input-gray-disabled;
+    border: 5px $input-gray-disabled solid;
+  }
+
+  &:focus + .form__label--checkbox .form__input-checkbox {
+    background-color: $input-gray-disabled;
+    border: 5px $input-gray-disabled solid;
+  }
+
+
+  &:focus:checked + .form__label--checkbox .form__input-checkbox {
     background-color: $input-gray-disabled;
     border: 5px $input-gray-disabled solid;
   }

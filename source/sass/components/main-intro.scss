@@ -5,6 +5,10 @@
   display: flex;
   flex-direction: column;
 
+  @media (max-width: $mobile-width-only) {
+    max-width: 320px;
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 43px;
     margin-bottom: 53px;

@@ -120,7 +120,9 @@
 }
 
 .extra-list__item--house .extra-list__title {
-  margin-top: 14px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: 14px;
+  }
 }
 
 .extra-list__title {

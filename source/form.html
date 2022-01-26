@@ -70,30 +70,31 @@
     </div>
 
     <form class="form-main__form form" action="https://echo.htmlacademy.ru/" method="get">
+      <h2 class="form-main__title visibility-hidden">Форма отзыва</h2>
       <fieldset class="form__fieldset form__fieldset--user-name">
         <legend class="form__legend form__legend--left title">Представьтесь:</legend>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <label for="user-name" class="form__label form__label--type-text text">Имя:</label>
-          <input type="text" id="user-name" name="user-name" class="form__input text-bold form__input--type-text" placeholder="Петр">
+          <input type="text" id="user-name" name="user-name" class="form__input text-bold form__input--type-text" placeholder="Петр" required>
         </div>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <label for="user-surname" class="form__label form__label--type-text text">Фамилия:</label>
-          <input type="text" id="user-surname" name="user-surname" class="form__input text-bold form__input--type-text" placeholder="Иванов">
+          <input type="text" id="user-surname" name="user-surname" class="form__input text-bold form__input--type-text" placeholder="Иванов" required>
         </div>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <label for="user-patronymic" class="form__label form__label--type-text text">Отчество:</label>
-          <input type="text" id="user-patronymic" name="user-patronymic" class="form__input text-bold form__input--type-text" placeholder="Александрович">
+          <input type="text" id="user-patronymic" name="user-patronymic" class="form__input text-bold form__input--type-text" placeholder="Александрович" required>
       </div>
       </fieldset>
 
       <fieldset class="form__fieldset form__fieldset--user-contacts">
         <legend class="form__legend title">Контактная информация:</legend>
-        <div class="form--wrapper form--wrapper-tel">
+        <div class="form__wrapper form__wrapper--tel">
           <label for="contacts-phone" class="form__label form__label--wrapper text">Контактный телефон*:</label>
           <input type="tel" id="contacts-phone" class="form__input text-bold form__input--type-text form__input--wrapper"
           placeholder="Введите телефон" required>
         </div>
-        <div class="form--wrapper form--wrapper-email">
+        <div class="form__wrapper form__wrapper--email">
         <label for="contacts-email" class="form__label form__label--wrapper text">Электронная почта*:</label>
           <input type="email" id="contacts-email" class="form__input text-bold form__input--type-text form__input--wrapper"
           placeholder="Введите e-mail" required>
@@ -102,21 +103,21 @@
 
       <fieldset class="form__fieldset form__fieldset--user-experience">
         <legend class="form__legend form__legend--center form__legend--radio title">Ваше общее впечатление:</legend>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <input type="radio" id="positive" value="positive" name="experience" class="form__input visibility-hidden" checked>
           <label for="positive" class="form__label form__label--radio text-bold">
             <span class="form__input-radio"></span>
             Скорее положительное
           </label>
         </div>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <input type="radio" id="negative" value="negative" name="experience" class="form__input visibility-hidden">
           <label for="negative" class="form__label form__label--radio text-bold">
             <span class="form__input-radio"></span>
             Скорее отрицательное
           </label>
         </div>
-        <div class="form--wrapper">
+        <div class="form__wrapper">
           <input type="radio" id="difficult" value="difficult" name="experience" class="form__input visibility-hidden">
           <label for="difficult" class="form__label form__label--radio text-bold">
             <span class="form__input-radio"></span>
@@ -127,15 +128,15 @@
 
       <fieldset class="form__fieldset form__fieldset--user-place">
         <legend class="form__legend form__legend--checkbox title">Посещенные достопримечательности:</legend>
-        <div class="form--wrapper">
-          <div class="form-checkbox--wrapper">
+        <div class="form__wrapper">
+          <div class="form__checkbox-wrapper">
           <input type="checkbox" id="bridge" name="place" value="bridge" class="form__input visibility-hidden" checked>
           <label for="bridge" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
             Мост Дьявола
           </label>
           </div>
-          <div class="form-checkbox--wrapper">
+          <div class="form__checkbox-wrapper">
           <input type="checkbox" id="mountain" name="place" value="mountain" class="form__input visibility-hidden" checked>
           <label for="mountain" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
@@ -143,15 +144,15 @@
           </label>
           </div>
         </div>
-        <div class="form--wrapper">
-          <div class="form-checkbox--wrapper">
+        <div class="form__wrapper">
+          <div class="form__checkbox-wrapper">
           <input type="checkbox" id="park" name="place" value="park" class="form__input visibility-hidden" checked>
           <label for="park" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
             Слайд-парк
           </label>
           </div>
-          <div class="form-checkbox--wrapper">
+          <div class="form__checkbox-wrapper">
           <input type="checkbox" id="rock" name="place" value="rock" class="form__input visibility-hidden">
           <label for="rock" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
@@ -159,27 +160,12 @@
           </label>
           </div>
         </div>
-         <div class="form--wrapper">
-          <div class="form-checkbox--wrapper">
-          <input type="checkbox" id="bridge" name="place" value="bridge" class="form__input visibility-hidden" checked>
-          <label for="bridge" class="form__label form__label--checkbox text-bold">
-            <span class="form__input-checkbox"></span>
-            Мост Дьявола
-          </label>
-          </div>
-          <div class="form-checkbox--wrapper">
-          <input type="checkbox" id="mountain" name="place" value="mountain" class="form__input visibility-hidden" checked>
-          <label for="mountain" class="form__label form__label--checkbox text-bold">
-            <span class="form__input-checkbox"></span>
-            Гора-Колокол
-          </label>
-          </div>
-        </div>
       </fieldset>
 
       <fieldset class="form__fieldset form__fieldset--user-comments">
         <legend class="form__legend title">Опишите свои эмоции:</legend>
-        <textarea name="comments" class="form__comments text-bold" placeholder="Опишите подробно все свои восторги"></textarea>
+        <textarea name="comments" class="form__comments text-bold" placeholder="Опишите подробно все свои восторги" >
+        </textarea>
       </fieldset>
 
       <button class="form__button button" type="submit">Отправить отзыв</button>
@@ -196,7 +182,7 @@
       <h3 class="form-sent__title title">Ваш отзыв отправлен!</h3>
       <p class="form-sent__text text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время мы опубликуем
         его на сайте</p>
-      <div class="form-sent__button--wrapper">
+      <div class="form-sent__button-wrapper">
         <button type="button" class="form-sent__button button">Закрыть окно</button>
       </div>
     </section>

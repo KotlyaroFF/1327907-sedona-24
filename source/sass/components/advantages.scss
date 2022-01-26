@@ -42,7 +42,7 @@
   margin-bottom: 35px;
 }
 
-.advantages--wrapper {
+.advantages__item-wrapper {
   display: flex;
   flex-direction: column;
   background-color: $blue;
@@ -53,7 +53,7 @@
   }
 }
 
-.advantages--wrapper .advantages__number {
+.advantages__item-wrapper .advantages__number {
   color: $white;
 }
 

@@ -115,7 +115,7 @@
   }
 }
 
-.form__fieldset--user-name .form--wrapper {
+.form__fieldset--user-name .form__wrapper {
   display: flex;
   justify-content: left;
   min-width: 280px;
@@ -128,7 +128,7 @@
   }
 }
 
-.form__fieldset--user-contacts .form--wrapper {
+.form__fieldset--user-contacts .form__wrapper {
   margin-top: 17px;
 
   @media (min-width: $tablet-width) {
@@ -158,7 +158,7 @@
   }
 }
 
-.form--wrapper-tel {
+.form__wrapper--tel {
   position: relative;
 
   &::before {
@@ -182,7 +182,7 @@
   }
 }
 
-.form--wrapper-email {
+.form__wrapper--email {
   position: relative;
 
   &::before {
@@ -206,7 +206,7 @@
   }
 }
 
-.form__fieldset--user-experience .form--wrapper {
+.form__fieldset--user-experience .form__wrapper {
   margin-top: 21px;
 
   &:first-of-type {
@@ -231,7 +231,7 @@
 }
 
 
-.form__fieldset--user-place .form--wrapper {
+.form__fieldset--user-place .form__wrapper {
   display: block;
 
   @media (min-width: $tablet-width) {
@@ -332,7 +332,7 @@
   }
 }
 
-.form--wrapper-tel .form__label {
+.form__wrapper--tel .form__label {
   @media (min-width: $desktop-width) {
     visibility: hidden;
     position: relative;
@@ -351,7 +351,7 @@
   }
 }
 
-.form-checkbox--wrapper {
+.form__checkbox-wrapper {
   margin-top: 34px;
 
   @media (min-width: $tablet-width) {
@@ -382,19 +382,12 @@
     border: none;
     margin: 0;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 6px;
   }
 
-  &:active + .form__label--radio .form__input-radio {
-    background-color: $input-gray-disabled;
-    border: 5px $input-gray-disabled solid;
-  }
-
-  &:focus + .form__label--radio .form__input-radio {
-    background-color: $input-gray-disabled;
-    border: 5px $input-gray-disabled solid;
-  }
-
-
+  &:active + .form__label--radio .form__input-radio,
+  &:focus + .form__label--radio .form__input-radio,
   &:focus:checked + .form__label--radio .form__input-radio {
     background-color: $input-gray-disabled;
     border: 5px $input-gray-disabled solid;
@@ -440,17 +433,8 @@
     }
   }
 
-  &:active + .form__label--checkbox .form__input-checkbox {
-    background-color: $input-gray-disabled;
-    border: 5px $input-gray-disabled solid;
-  }
-
-  &:focus + .form__label--checkbox .form__input-checkbox {
-    background-color: $input-gray-disabled;
-    border: 5px $input-gray-disabled solid;
-  }
-
-
+  &:active + .form__label--checkbox .form__input-checkbox,
+  &:focus + .form__label--checkbox .form__input-checkbox,
   &:focus:checked + .form__label--checkbox .form__input-checkbox {
     background-color: $input-gray-disabled;
     border: 5px $input-gray-disabled solid;
@@ -477,7 +461,7 @@
 
   &::placeholder {
     color: $black;
-    padding-left: 20px;
+    padding-left: 0;
   }
 }
 
@@ -507,8 +491,11 @@
 }
 
 .form__input--wrapper {
+  padding-right: 65px;
+  box-sizing: border-box;
+
   @media (min-width: $desktop-width) {
-    width: 315px;
+    width: 230px;
   }
 }
 
@@ -520,6 +507,7 @@
   font-family: inherit;
   padding: 13px 0 0 22px;
   margin: 15px 0 0 0;
+  resize: none;
 
   &::placeholder {
     color: $black;
@@ -529,7 +517,7 @@
 .form__button {
   min-width: 280px;
   margin: 31px 20px 20px;
-  height: 58px;
+  min-height: 58px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

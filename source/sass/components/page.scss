@@ -1,4 +1,13 @@
+.page {
+  @media (min-width: $desktop-width) {
+    background-color: $input-gray;
+  }
+}
+
 .page__body {
+
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -6,6 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $input-gray;
+    box-shadow: $body-shadow;
+    margin: 0 auto;
+    max-width: 1200px;
   }
 }

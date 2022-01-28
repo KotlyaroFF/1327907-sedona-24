@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 586px 256px 256px;
   }
 
@@ -42,7 +42,7 @@
   margin-bottom: 35px;
 }
 
-.advantages--wrapper {
+.advantages__item-wrapper {
   display: flex;
   flex-direction: column;
   background-color: $blue;
@@ -53,12 +53,14 @@
   }
 }
 
-.advantages--wrapper .advantages__number {
+.advantages__item-wrapper .advantages__number {
   color: $white;
 }
 
 .advantages__content-wrapper {
+  margin: 0 auto;
   margin-top: 25px;
+  max-width: 256px;
 
   @media (max-width: $mobile-width-only) {
     min-width: $mobile-width;
@@ -83,6 +85,10 @@
 .advantages__photo {
   max-width: 100%;
   order: 1;
+  display: block;
+  margin: auto 0;
+  width: 100%;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     height: 256px;

@@ -1,7 +1,7 @@
 .intro {
   display: flex;
   justify-content: center;
-  background: url("../../img/photo/back-desktop.jpg") no-repeat;
+  background: url("../img/photo/back-desktop.jpg") no-repeat;
   min-width: $mobile-width;
   background-color: $blue;
   background-position: 50% 100%;
@@ -10,7 +10,7 @@
 
 
   &--index {
-    background: url("../img/photo/back-desktop-index@.jpg") no-repeat;
+    background: url("../img/photo/back-desktop-index.jpg") no-repeat;
     background-position: center;
     background-color: $blue;
     background-size: cover;
@@ -21,16 +21,21 @@
     background-size: 150%;
     background-position: 52% 90%;
     height: 290px;
+
+    &--index {
+      background: url("../img/photo/back-desktop-index.jpg") no-repeat;
+      height: 518px;
+      background-size: cover;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $blue;
     background-size: 100%;
     background-position: 50% 82%;
   }
 
   @media (min-resolution: 2dppx) {
-    background: url("../../img/photo/back-desktop@2x.jpg") no-repeat;
+    background: url("../img/photo/back-desktop@2x.jpg") no-repeat;
     background-color: $blue;
     background-position: 50% 100%;
     height: 158px;
@@ -51,23 +56,15 @@
       height: 290px;
 
       &--index {
-        background-position: center;
-        background-color: $blue;
+        background: url("../img/photo/back-desktop-index@2x.jpg") no-repeat;
         background-size: cover;
         height: 518px;
       }
     }
 
     @media (min-width: $desktop-width) {
-      background-color: $blue;
       background-size: 100%;
       background-position: 50% 82%;
-
-      &--index {
-        background-position: center;
-        background-color: $blue;
-        background-size: cover;
-      }
     }
   }
 }

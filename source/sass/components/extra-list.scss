@@ -6,7 +6,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 256px 256px 256px;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
   }
 
@@ -38,19 +38,15 @@
     position: absolute;
     background-position: center;
     margin-left: -7px;
-    top: 26px;
 
     @media (min-width: $tablet-width) {
       width: 75px;
       height: 73px;
       background-size: 100%;
       display: block;
-      left: 65px;
+      left: 50%;
       top: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 140px;
+      margin-left: -37.5px;
     }
   }
 
@@ -69,12 +65,9 @@
       height: 75px;
       background-size: 100%;
       display: block;
-      left: 70px;
+      left: 50%;
       top: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 145px;
+      margin-left: -31.5px;
     }
   }
 
@@ -93,12 +86,9 @@
       height: 69px;
       background-size: 100%;
       display: block;
-      left: 67px;
+      left: 50%;
       top: 60px;
-    }
-
-    @media (min-width: $desktop-width) {
-      left: 140px;
+      margin-left: -38px;
     }
   }
 

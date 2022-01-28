@@ -25,6 +25,7 @@
 
     &--index {
       background: url("../img/photo/back-desktop-index.jpg") no-repeat;
+      background-position: center;
       height: 518px;
       background-size: cover;
     }
@@ -58,6 +59,7 @@
 
       &--index {
         background: url("../img/photo/back-desktop-index@2x.jpg") no-repeat;
+        background-position: center;
         background-size: cover;
         height: 518px;
       }

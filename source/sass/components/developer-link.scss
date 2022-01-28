@@ -8,31 +8,22 @@
   @media (min-width: $tablet-width) {
     margin: auto 0;
   }
+
+  &:hover,
+  &:hover .developer-link__text {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .developer-link__icon {
   margin: auto;
   margin-left: 10px;
-
-
-  &:hover path {
-    fill: $blue;
-  }
-
-  &:active path {
-    opacity: 0.3;
-  }
 }
 
 .developer-link__text {
   text-align: center;
-
-  &:hover {
-    color: $blue;
-  }
-
-  &:active {
-    color: $black;
-    opacity: 0.3;
-  }
 }

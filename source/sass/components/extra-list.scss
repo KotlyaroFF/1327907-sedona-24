@@ -17,9 +17,12 @@
 
 .extra-list__item {
   margin: 0 20px 0 20px;
-  padding-top: 26px;
   list-style: none;
   position: relative;
+
+  &:first-child {
+    margin-top: 36px;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -111,12 +114,12 @@
 
 .extra-list__item--house .extra-list__title {
   @media (max-width: $mobile-width-only) {
-    margin-top: 14px;
+    margin-top: 10px;
   }
 }
 
 .extra-list__title {
-  margin-left: 50px;
+  margin-left: 49px;
   width: auto;
   margin-top: 0;
 
@@ -127,7 +130,7 @@
 }
 
 .extra-list__text {
-  margin-left: 50px;
+  margin-left: 49px;
 
   @media (min-width: $tablet-width) {
     margin: 0;

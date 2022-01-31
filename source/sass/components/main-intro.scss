@@ -1,12 +1,23 @@
 .main-intro {
   min-width: 280px;
-  margin: 32px 18px 48px 17px;
+  margin: 33px 21px 20px 17px;
   text-align: center;
   display: flex;
   flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
     max-width: 320px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      height: 37px;
+      width: 100%;
+      background: url("../img/triangle.svg") no-repeat;
+      bottom: -116px;
+      left: 0;
+      background-position: center;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -55,6 +66,6 @@
 }
 
 .main-intro__text {
-  margin-top: 25px;
+  margin-top: 34px;
   margin-bottom: 0;
 }

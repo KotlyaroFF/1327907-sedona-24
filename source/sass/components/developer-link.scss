@@ -26,4 +26,9 @@
 
 .developer-link__text {
   text-align: center;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+  }
 }

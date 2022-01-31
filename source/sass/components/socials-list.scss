@@ -8,6 +8,10 @@
     margin-top: 12px;
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-left: -12px;
+  }
 }
 
 .socials-list__item {

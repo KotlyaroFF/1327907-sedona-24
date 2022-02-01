@@ -49,24 +49,7 @@
       <img src="img/sedona.svg" alt="sedona" class="intro__img">
 </div>
   </header>
-
-  <script>
-    var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.main-nav__toggle');
-
-    navMain.classList.remove('main-nav--nojs');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('main-nav--closed')) {
-        navMain.classList.remove('main-nav--closed');
-        navMain.classList.add('main-nav--opened');
-      } else {
-        navMain.classList.add('main-nav--closed');
-        navMain.classList.remove('main-nav--opened');
-      }
-    });
-  </script>
-
+  
   <main class="form-main">
     <div class="main-intro main-intro--wrapper main-intro--form">
       <h1 class="main-intro__title title title--tablet">Оставьте свой отзыв</h1>
@@ -239,6 +222,6 @@
     </a>
   </footer>
 
+  <script src="/js/script.js"></script>
 </body>
-
 </html>

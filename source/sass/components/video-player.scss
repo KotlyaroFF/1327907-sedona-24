@@ -1,3 +1,16 @@
+.video-player {
+  margin-bottom: -9px;
+
+  @media (min-width: $tablet-width) {
+    max-height: 500px;
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 88px;
+  }
+}
+
 .video-player__video {
   min-height: 201px;
   min-width: $mobile-width;
@@ -15,6 +28,7 @@
     background: url("../img/photo-catalog/video-desktop.jpg") no-repeat;
     background-size: cover;
     min-width: 800px;
+    margin-left: -11px;
   }
 
   @media (min-resolution: 2dppx) {

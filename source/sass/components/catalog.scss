@@ -25,6 +25,12 @@
   border-top: 1px $gray solid;
   font-size: 0;
 
+  &--preview {
+    @media (min-width: $desktop-width) {
+      margin-top: 10px;
+    }
+  }
+
   &:last-child {
     border-bottom: 1px $gray solid;
 
@@ -46,10 +52,11 @@
 
 .catalog__item-sudtext {
   text-align: left;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     max-width: 239px;
+    margin-bottom: 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -109,9 +116,13 @@
 
 .catalog__title {
   margin-bottom: 0;
-  margin-top: 16px;
+  margin-top: 10px;
   font-size: 14px;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 17px;
+  }
 }
 
 .catalog__text {
@@ -135,6 +146,7 @@
 
   @media (min-width: $tablet-width) {
     background-color: $input-gray;
+    padding-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
@@ -168,5 +180,11 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
-  margin-left: 9px;
+  margin-left: 14px;
+  margin-top: 2px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 9px;
+    margin-top: 7px;
+  }
 }

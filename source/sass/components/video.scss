@@ -9,23 +9,29 @@
 
 .video__title {
   margin-top: 32px;
-  margin-bottom: 25px;
+  margin-bottom: 0;
 
   @media (min-width: $tablet-width) {
-    margin-top: 46px;
+    margin-top: 51px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 50px;
+    margin-top: 57px;
   }
 }
 
 .video__text {
-  margin-bottom: 33px;
-
+  margin-bottom: 36px;
+  margin-top: 30px;
+  padding-left: 25px;
+  padding-right: 23px;
+  line-height: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 88px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 34px;
   }
 
 

@@ -8,7 +8,7 @@
     margin-right: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto 337px auto auto;
+    grid-template-rows: auto auto auto auto auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,10 +24,11 @@
   flex-direction: column;
   justify-content: space-between;
   border: none;
-  margin: 20px 20px;
+  margin: 20px;
   padding: 0;
   min-width: 280px;
   position: relative;
+  margin-bottom: 24px;
 
   @media (max-width: $mobile-width-only) {
     &::before {
@@ -41,11 +42,18 @@
     }
 
     &--user-place {
-      margin-top: 15px;
+      margin-top: 8px;
       margin-bottom: 30px;
+      padding: 0;
 
       &::before {
-        top: -67px;
+        top: -60px;
+      }
+    }
+
+    &--user-comments {
+      &::before {
+        top: -62px;
       }
     }
   }
@@ -56,7 +64,7 @@
     &--user-name {
       grid-column-start: -1;
       grid-column-end: 2;
-      margin-left: 58px;
+      margin-left: 44px;
       justify-content: stretch;
     }
 
@@ -67,6 +75,7 @@
       grid-row-end: 3;
       border-top: 1px $light-gray solid;
       margin: auto 0;
+      margin-top: 38px;
     }
 
     &--user-experience {
@@ -75,7 +84,7 @@
       grid-row-start: 1;
       grid-row-end: 2;
       border-right: 1px $light-gray solid;
-      margin-bottom: 56px;
+      margin-bottom: 24px;
       justify-content: stretch;
     }
 
@@ -85,7 +94,8 @@
       grid-row-start: 3;
       grid-row-end: 4;
       border-top: 1px $light-gray solid;
-      margin-bottom: 75px;
+      margin-bottom: 55px;
+      justify-content: space-between;
     }
 
     &--user-comments {
@@ -106,11 +116,13 @@
       flex-direction: row;
       flex-wrap: wrap;
       margin-bottom: 0;
+      justify-content: flex-start;
     }
 
     &--user-contacts {
       flex-direction: row;
       flex-wrap: wrap;
+      margin-bottom: -20px;
     }
   }
 }
@@ -123,27 +135,27 @@
 
   &:first-of-type {
     @media (min-width: $tablet-width) {
-      margin-top: 35px;
+      margin-top: 52px;
     }
   }
 }
 
 .form__fieldset--user-contacts .form__wrapper {
-  margin-top: 17px;
+  margin-top: 22px;
 
   @media (min-width: $tablet-width) {
     margin-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 51px 0;
+    margin: 71px 0;
     display: flex;
   }
 
   &:last-of-type {
     @media (max-width: $mobile-width-only) {
-      margin-bottom: 8px;
-      margin-top: 14px;
+      margin-bottom: 3px;
+      margin-top: 15px;
     }
 
     @media (min-width: $tablet-width) {
@@ -152,7 +164,8 @@
     }
 
     @media (min-width: $desktop-width) {
-      margin-top: 51px;
+      margin-top: 71px;
+      margin-bottom: 72px;
     }
   }
 }
@@ -212,32 +225,45 @@
     margin-top: 25px;
 
     @media (min-width: $tablet-width) {
-      margin-top: 37px;
+      margin-top: 61px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 63px;
     }
   }
 
   &:last-of-type {
-    margin-bottom: 19px;
+    margin-bottom: 13px;
 
     @media (min-width: $desktop-width) {
       margin-bottom: 74px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 13px;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 29px;
   }
 }
 
 
 .form__fieldset--user-place .form__wrapper {
   display: block;
+  margin-bottom: -10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 460px;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-start;
+    width: initial;
   }
 }
 
@@ -245,7 +271,7 @@
 .form__legend {
   text-align: center;
   max-width: 309px;
-  margin: 20px 0;
+  margin: 0;
 
   &--checkbox {
     @media (max-width: $mobile-width-only) {
@@ -302,21 +328,33 @@
 .form__label {
   &--type-text {
     margin: auto;
-    padding-right: 13px;
+    padding-right: 20px;
     color: $light-black;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-top: 21px;
+
+    @media (min-width: $tablet-width) {
+      padding-right: 18px;
+      padding-left: 14px;
+      padding-top: 2px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding-left: 1px;
+      padding-top: 4px;
+    }
   }
 
   &--wrapper {
     display: block;
     padding: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     color: $light-black;
     margin-left: 21px;
 
     &:last-of-type {
       @media (max-width: $mobile-width-only) {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
       }
     }
 
@@ -335,9 +373,13 @@
 
   &--radio {
     display: block;
-    padding-left: 79px;
+    padding-left: 75px;
     padding-top: 11px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
+
+    @media (min-width: $desktop-width) {
+      padding-left: 80px;
+    }
   }
 }
 
@@ -361,25 +403,53 @@
 }
 
 .form__checkbox-wrapper {
-  margin-top: 34px;
+  margin-top: 33px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
-    min-width: 225px;
+    min-width: 211px;
+    margin-top: 21px;
+    padding-left: 2px;
+    margin-left: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 47px;
-    margin-bottom: 74px;
+    margin-top: 49px;
+    margin-bottom: 52px;
+    padding-left: 0;
+    width: 201px;
+    min-width: initial;
+    margin-right: 58px;
+    margin-left: 0;
+
+    &--last {
+      margin-right: 0;
+    }
+
+    &--short {
+      margin-right: 40px;
+    }
   }
 
   &:nth-child(2n) {
+    margin-top: 23px;
+
     @media (min-width: $tablet-width) {
-      padding-left: 36px;
+      padding-left: 35px;
+      margin-top: 21px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 49px;
+      padding-left: 0;
     }
   }
 }
 
+.form__wrapper--first .form__checkbox-wrapper {
+  @media (min-width: $tablet-width) {
+    margin-top: 49px;
+  }
+}
 
 .form__input {
   &--type-text {
@@ -393,6 +463,10 @@
     padding: 0;
     padding-left: 20px;
     padding-right: 6px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 22px;
+    }
 
     &:hover {
       background-color: $input-gray-hover;
@@ -449,7 +523,7 @@
       background-color: $light-black;
       border-radius: 18px;
       position: absolute;
-      top: 15px;
+      top: 0;
       left: 15px;
       opacity: 30%;
     }
@@ -496,8 +570,8 @@
   background-color: $input-gray;
   border: 5px $input-gray solid;
   border-radius: 48px;
-  margin-left: -80px;
-  margin-top: -11px;
+  margin-left: -76px;
+  margin-top: -16px;
 }
 
 .form__input-checkbox {
@@ -509,12 +583,13 @@
   border: 5px $input-gray solid;
   border-radius: 5px;
   margin-left: -80px;
-  margin-top: -11px;
+  margin-top: -17px;
 }
 
 .form__input--wrapper {
   padding-right: 65px;
   box-sizing: border-box;
+  padding-left: 22px;
 
   @media (min-width: $desktop-width) {
     width: 315px;
@@ -527,10 +602,15 @@
   border: none;
   background-color: $input-gray;
   font-family: inherit;
-  padding: 18px 20px;
+  padding: 14px 20px;
   margin: 0;
   resize: none;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 21px;
+    padding-top: 17px;
+  }
 
 
   &::placeholder {
@@ -552,17 +632,23 @@
 
 .form__button {
   min-width: 280px;
-  margin: 31px 20px 20px;
+  margin: 27px 20px 38px;
   min-height: 58px;
+  padding-top: 17px;
+  padding-bottom: 13px;
+  padding-left: 3px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-top: 58px;
+    margin-top: 56px;
     margin-bottom: 61px;
+    padding-left: 0;
+    padding-right: 12px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 66px;
+    padding-right: 0;
   }
 }
 

@@ -9,6 +9,10 @@
     margin: auto 0;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+  }
+
   &:hover,
   &:hover .developer-link__text {
     color: $blue;
@@ -26,4 +30,9 @@
 
 .developer-link__text {
   text-align: center;
+  margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 11px;
+  }
 }

@@ -14,6 +14,10 @@
     background-color: transparentize($black, 0.4);
     margin-bottom: 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -11px;
+  }
 }
 
 .video-player-control__item {
@@ -123,4 +127,3 @@
     fill: transparentize($white, 0.7);
   }
 }
-

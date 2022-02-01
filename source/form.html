@@ -70,7 +70,7 @@
   <main class="form-main">
     <div class="main-intro main-intro--wrapper main-intro--form">
       <h1 class="main-intro__title title title--tablet">Оставьте свой отзыв</h1>
-      <p class="main-intro__text text text--tablet">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="text-space--no-mobile"> а также о
+      <p class="main-intro__text main-intro__text--form text text--tablet">Помогите нашим отелям стать лучше! оставьте отзыв о них,<br class="text-space--no-mobile"> а также о
         посещенных вами достопримечательностях</p>
     </div>
 
@@ -133,7 +133,7 @@
 
       <fieldset class="form__fieldset form__fieldset--user-place">
         <legend class="form__legend form__legend--checkbox title">Посещенные достопримечательности:</legend>
-        <div class="form__wrapper">
+        <div class="form__wrapper form__wrapper--first">
           <div class="form__checkbox-wrapper">
           <input type="checkbox" id="bridge" name="place" value="bridge" class="form__input visibility-hidden" checked>
           <label for="bridge" class="form__label form__label--checkbox text-bold">
@@ -150,14 +150,14 @@
           </div>
         </div>
         <div class="form__wrapper">
-          <div class="form__checkbox-wrapper">
+          <div class="form__checkbox-wrapper form__checkbox-wrapper--short">
           <input type="checkbox" id="park" name="place" value="park" class="form__input visibility-hidden" checked>
           <label for="park" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
             Слайд-парк
           </label>
           </div>
-          <div class="form__checkbox-wrapper">
+          <div class="form__checkbox-wrapper form__checkbox-wrapper--last">
           <input type="checkbox" id="rock" name="place" value="rock" class="form__input visibility-hidden">
           <label for="rock" class="form__label form__label--checkbox text-bold">
             <span class="form__input-checkbox"></span>
@@ -169,12 +169,11 @@
 
       <fieldset class="form__fieldset form__fieldset--user-comments">
         <legend class="form__legend form__legend--comments title">Опишите свои эмоции:</legend>
-        <textarea name="comments" class="form__comments text-bold" placeholder="Опишите подробно все свои восторги">
-        </textarea>
+        <textarea name="comments" class="form__comments text-bold" placeholder="Опишите подробно все свои восторги"></textarea>
       </fieldset>
 
       <button class="form__button button" type="submit">Отправить отзыв</button>
-      <p class="form__subtext visually-hidden">* — обязательные поля</p>
+      <p class="form__subtext text visually-hidden">* — обязательные поля</p>
     </form>
 
     <section class="form-error form-hidden visually-hidden1">

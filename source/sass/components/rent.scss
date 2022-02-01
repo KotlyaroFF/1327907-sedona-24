@@ -9,6 +9,10 @@
     margin-top: 30px;
     margin-bottom: 59px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 67px;
+  }
 }
 
 .rent__title {
@@ -33,6 +37,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 42px;
     margin-top: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 49px;
   }
 }
 

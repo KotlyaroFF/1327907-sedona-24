@@ -12,6 +12,10 @@
   @media (min-width: $tablet-width) {
     margin-left: -12px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 27px;
+  }
 }
 
 .socials-list__item {

@@ -1,5 +1,6 @@
 .video-player {
   margin-bottom: -9px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     max-height: 500px;
@@ -13,9 +14,10 @@
 
 .video-player__video {
   min-height: 201px;
-  min-width: $mobile-width;
+  width: 100%;
   background: url("../img/photo-catalog/video-mobile.jpg") no-repeat;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
 
   @media (min-width: $tablet-width) {
     background: url("../img/photo-catalog/video-tablet.jpg") no-repeat;
@@ -27,8 +29,10 @@
   @media (min-width: $desktop-width) {
     background: url("../img/photo-catalog/video-desktop.jpg") no-repeat;
     background-size: cover;
-    min-width: 800px;
+    width: 800px;
     margin-left: -11px;
+    background-position: center;
+
   }
 
   @media (min-resolution: 2dppx) {

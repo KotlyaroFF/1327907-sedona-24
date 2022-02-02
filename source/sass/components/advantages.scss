@@ -10,10 +10,6 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 586px 256px 256px;
   }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: 400px 400px 400px;
-  }
 }
 
 .advantages__item {
@@ -74,6 +70,14 @@
   }
 }
 
+.advantages__item--long-1 .advantages__content-wrapper,
+.advantages__item--long-2 .advantages__content-wrapper {
+  @media (min-width: $tablet-width) {
+    width: 34%;
+    flex-shrink: 0;
+  }
+}
+
 .advantages__item--long-2 .advantages__title {
   margin-top: 22px;
 }
@@ -115,14 +119,10 @@
 .advantages__content-wrapper {
   margin: 0 auto;
   margin-top: 56px;
-  max-width: 256px;
-
-  @media (max-width: $mobile-width-only) {
-    min-width: $mobile-width;
-  }
 
   @media (min-width: $tablet-width) {
     margin-top: 42px;
+    max-width: 256px;
   }
 
   @media (min-width: $desktop-width) {

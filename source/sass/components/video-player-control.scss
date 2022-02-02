@@ -53,6 +53,8 @@
     height: 45px;
     margin-top: -45px;
     background-color: transparentize($black, 0.4);
+    left: 50%;
+    margin-left: -140px;
   }
 
   &::before {

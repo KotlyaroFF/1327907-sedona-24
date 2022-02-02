@@ -2,21 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: $mobile-width;
   width: 100%;
   max-width: $desktop-width;
   min-height: 120px;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
-    min-width: $tablet-width;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
     background-color: $white;
   }
 }

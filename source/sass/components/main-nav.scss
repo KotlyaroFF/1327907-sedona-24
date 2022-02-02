@@ -3,6 +3,10 @@
   justify-content: space-around;
   flex-direction: column;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
   @media (min-width: $desktop-width) {
     padding-bottom: 2px;
   }
@@ -44,21 +48,19 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  min-width: $mobile-width;
   z-index: 3;
 
   @media (min-width: $tablet-width) {
     flex-wrap: nowrap;
     background-color: $white;
-    min-width: $tablet-width;
     justify-content: space-around;
     flex-direction: row;
     align-items: center;
     max-height: 56px;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: $desktop-width;
     max-height: 52px;
   }
 }
@@ -83,7 +85,7 @@
 
 
   @media (min-width: $tablet-width) {
-    min-width: 153px;
+    width: 20%;
     border: none;
     margin-top: -4px;
   }

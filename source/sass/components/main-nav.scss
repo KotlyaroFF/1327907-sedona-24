@@ -83,13 +83,11 @@
     border: none;
   }
 
-
   @media (min-width: $tablet-width) {
     width: 20%;
     border: none;
     margin-top: -4px;
   }
-
 
   @media (min-width: $desktop-width) {
     min-width: 179px;
